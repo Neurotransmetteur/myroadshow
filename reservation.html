@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRoadShow | SHOWCASE</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- ===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav container-fluid">
+            <div>
+                <a href="index.html" class="nav__logo">MyRoadShow</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#aboutus" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="reservation.html" class="nav__link">Reserver</a></li>
+                    <li class="nav__item"><a href="#contactUs" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="registercontainer">
+        <div class="leftpartcontainer">
+            <div class="overlay">
+                <div class="content">
+                    <h1>MyRoadShow | SHOWCASE</h1>
+                    <p>Réserver dès maintenant votre place !</p>
+                    <a href="/index.html">Accueil</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightpartcontainer">
+            <form>
+                <h3>Achat de billet</h3>
+
+                <label for="Nom">Nom</label>
+                <input required type="text" placeholder="Votre nom ici" id="firstName">
+
+
+
+                <label for="Prénom">Prénom</label>
+                <input required type="text" placeholder="Votre prénom ici" id="lastName">
+
+                <label for="email">email</label>
+                <input required type="email" placeholder="Votre email ici" id="email">
+
+                <label for="telephone">Téléphone</label>
+                <input required type="tel" placeholder="Numéro de Téléphone" id="password">
+
+                <label for="NbrTicket">Nombre de billet</label>
+                <select name="" id="NbrTicket">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <button type="submit">Valider</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
