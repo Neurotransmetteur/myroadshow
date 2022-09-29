@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="rightpartcontainer">
-            <form>
+            <form id="formForBuy" onsubmit="buyMyTickets()">
                 <h3>Achat de billet</h3>
 
                 <label for="Nom">Nom</label>
@@ -59,7 +59,7 @@
                 <input required type="email" placeholder="Votre email ici" id="email">
 
                 <label for="telephone">Téléphone</label>
-                <input required type="tel" placeholder="Numéro de Téléphone" id="password">
+                <input required type="tel" placeholder="Numéro de Téléphone" id="telephone">
 
                 <label for="NbrTicket">Nombre de billet</label>
                 <select name="" id="NbrTicket">
@@ -68,14 +68,17 @@
                     <option value="3">3</option>
                 </select>
 
-                <button type="submit">Valider</button>
-
+                <button type="submit" id="val">Valider</button>
             </form>
+
+
         </div>
     </div>
 
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
 
-    <script src="./assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
